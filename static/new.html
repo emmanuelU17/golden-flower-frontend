@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new </title>
+
+    <link rel="stylesheet" href="../templates/index.css">
+    <!--  Start of bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous">
+    <!--  End of bootstrap  -->
+
+    <!-- Menu icon link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+        crossorigin="anonymous">
+
+
+</head>
+<body style="background-color: hsl(210, 36%, 96%);">
+
+<img src="" id="test" alt="">
+<section>
+    <!-- Product Form -->
+    <div id="product-form">
+        <div class="products-header">
+            <h2>Add New Product</h2>
+        </div>
+
+        <!-- Error Div -->
+        <div id="errorMessage" style="color: red;"><br></div>
+        <!-- End Error Div -->
+
+
+        <form id="new-product" method="post" enctype="multipart/form-data">
+
+            <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" name="name" required/>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="category">Category</label>
+                <input class="form-control" id="category" name="category" type="text" required/>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="file">Image</label>
+                <input class="form-control" id="file" name="file" type="file" accept="image/png, image/jpg, image/jpeg" required/>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <input class="form-control" id="description" name="description" type="text" />
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-3" value="submit">Save</button>
+            <button type="reset" class="btn btn-primary mb-3">Reset</button>
+        </form>
+    </div>
+    <!-- End of Product Form -->
+
+
+
+    <!-- Display List Of Product -->
+    <div id="display-product">
+        <div class="products-header">
+            <h2>Products</h2>
+        </div>
+
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Description</th>
+                <th scope="col">Edit / Delete</th>
+            </tr>
+            </thead>
+
+            <tbody class="diplay-every-roduct-dynamically">
+            <!-- <tr>
+                <td>#</td>
+                <td> <img class="photo" alt="item" src=""> </td>
+                <td> name </td>
+                <td>Category</td>
+                <td>Description</td>
+                <td>
+                    <a  class="btn btn-primary" role="button" href="" > Edit </a>
+                    /
+                    <a  class="btn btn-danger" role="button"> Delete </a>
+                </td>
+            </tr> -->
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="back-to-left-top">
+        <div class="inner-to-left">
+            <a href="../static/index.html"><i class="fas fa-angle-double-left"></i></a>
+        </div>
+        <div class="inner-to-top">
+            <a href="#product"><i class="fas fa-angle-double-up"></i></a>
+        </div>
+    </div>
+
+</section>
+
+<script type="module" src="../javascript/new.js"></script>
+</body>
+</html>

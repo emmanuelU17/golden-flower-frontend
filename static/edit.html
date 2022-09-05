@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+
+    <link rel="stylesheet" href="../templates/index.css">
+    <!--  Start of bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous">
+    <!--  End of bootstrap  -->
+
+    <!-- Menu icon link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+        crossorigin="anonymous">
+    <!-- End of Menu icon link -->
+
+</head>
+
+<body style="background-color: hsl(210, 36%, 96%);">
+
+<section>
+    <div id="product-form">
+
+        <div class="products-header">
+            <h2>Edit</h2>
+        </div>
+        <div id="errorMessage" style="color: red;"><br></div>
+        
+        <form id="edit-product" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" name="name" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="category">Category</label>
+                <input class="form-control" id="category" name="category" type="text" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="file">Image</label>
+                <input class="form-control" id="file" name="file" type="file" accept="image/png, image/jpg, image/jpeg" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <input class="form-control" id="description" name="description" type="text" />
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-3" value="submit">Save</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<script type="module" src="../javascript/edit.js"></script>
+
+</body>
+</html>
